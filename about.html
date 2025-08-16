@@ -1,229 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Expedite HRS</title>
+  <title>About Us — Expedite HRS</title>
+  <meta name="description" content="Expedite HRS — precision recruiting, startup speed, enterprise discipline. Pune-based search firm for founders and growth teams." />
   <link rel="stylesheet" href="/assets/css/style.css" />
-  <!-- Optional: remove if you paste CSS into style.css (Option B) -->
+
+  <!-- Page-specific layout (lightweight) -->
   <style>
-    /* ===== About page — scoped styles ===== */
-    :root {
-      --ink: #0b0f19;
-      --muted: #5b6576;
-      --line: rgba(0,0,0,.08);
-      --accent: #0f62fe; /* adjust to your brand if needed */
-      --chip-bg: #f5f7fb;
+    .section{padding:40px 0;border-bottom:1px solid var(--border)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+    .card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px}
+    .card h3{margin:0 0 8px}
+    .list{margin:0;padding-left:18px}
+    .list li{margin:8px 0}
+    .tags{display:flex;flex-wrap:wrap;gap:10px}
+    .tag{border:1px solid var(--border);border-radius:999px;padding:8px 12px;font-weight:600}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+    .step{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px}
+    .num{width:36px;height:36px;border-radius:999px;background:#eaf2fc;border:1px solid #d7e6fb;color:var(--accent);display:inline-flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:10px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .stat{background:#fbfcfe;border:1px solid var(--border);border-radius:16px;padding:20px;text-align:center}
+    .stat .kpi{font-size:28px;font-weight:800}
+    .center{text-align:center}
+    @media (max-width:900px){
+      .grid-4,.grid-3,.steps{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .stats{grid-template-columns:1fr}
     }
-    .about main { padding-block: 48px; }
-    .container { width: min(1100px, 92vw); margin-inline: auto; }
-
-    /* Hero */
-    .hero--about { padding-block: clamp(56px, 8vw, 104px); border-bottom: 1px solid var(--line); }
-    .hero--about h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.05; letter-spacing: -0.02em; color: var(--ink); margin: 0 0 12px; }
-    .hero--about p { color: var(--muted); font-size: clamp(16px, 2.2vw, 20px); margin: 0; }
-
-    /* Sections */
-    .section { padding-block: 48px; border-bottom: 1px solid var(--line); }
-    .section h2 { font-size: clamp(22px, 3.2vw, 28px); margin: 0 0 16px; letter-spacing: -0.01em; }
-    .lede { color: var(--ink); font-size: 18px; line-height: 1.6; max-width: 70ch; }
-
-    /* Grid helpers */
-    .grid { display: grid; gap: 16px; }
-    .grid--2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-    .grid--3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-    .grid--4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-
-    /* Cards */
-    .card { border: 1px solid var(--line); border-radius: 14px; padding: 16px; background: #fff; transition: transform .2s ease, box-shadow .2s ease; }
-    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.06); }
-    .card h3 { margin: 0 0 6px; font-size: 18px; }
-    .card p { margin: 0; color: var(--muted); line-height: 1.6; }
-
-    /* Process */
-    .step { display:flex; gap:12px; align-items:flex-start; }
-    .step-num { flex: 0 0 36px; height:36px; border-radius: 10px; display:grid; place-items:center; font-weight: 600; border:1px solid var(--line); background:#fff; }
-    .step h3 { margin:0 0 4px; font-size:16px; }
-    .step p { margin:0; color:var(--muted); font-size:15px; }
-
-    /* Why Us */
-    .ticks { list-style:none; padding:0; margin:0; display:grid; gap:10px; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); }
-    .ticks li { position:relative; padding-left:28px; }
-    .ticks li::before { content:"✓"; position:absolute; left:0; top:0; color:var(--accent); font-weight:700; }
-
-    /* Industries */
-    .tags { display:flex; flex-wrap:wrap; gap:10px; }
-    .tag { background:var(--chip-bg); border:1px solid var(--line); padding:8px 12px; border-radius:999px; font-size:14px; color:var(--ink); }
-
-    /* Stats */
-    .stats { display:grid; gap:14px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
-    .stat { border:1px solid var(--line); border-radius:14px; padding:16px; background:#fff; text-align:center; }
-    .stat .num { font-size:28px; font-weight:800; letter-spacing:-0.02em; }
-    .stat .label { color:var(--muted); font-size:14px; }
-
-    /* CTA */
-    .cta { padding-block: 48px; text-align:center; }
-    .btn {
-      display:inline-flex; align-items:center; gap:10px;
-      padding:14px 18px; border-radius:12px; border:1px solid var(--ink);
-      background: var(--ink); color:#fff; text-decoration:none; font-weight:600;
-      transition: transform .15s ease, opacity .15s ease;
-    }
-    .btn:hover { transform: translateY(-1px); opacity:.95; }
   </style>
 </head>
-<body class="about">
-  <!-- header comes from your global layout / style.css -->
-  <header></header>
-
-  <main>
-    <!-- 1) Page Hero -->
-    <section class="hero--about">
-      <div class="container">
-        <h1>About Expedite HRS</h1>
-        <p>Precision recruiting, startup speed, enterprise discipline.</p>
-      </div>
-    </section>
-
-    <!-- 2) Who We Are -->
-    <section class="section">
-      <div class="container">
-        <h2>Who We Are</h2>
-        <p class="lede">
-          We’re a Pune-based search firm built for founders and growth teams. We map, source, and present interview-ready talent fast — no noise, just outcomes.
-        </p>
-      </div>
-    </section>
-
-    <!-- 3) What We Do (Services) -->
-    <section class="section">
-      <div class="container">
-        <h2>What We Do</h2>
-        <div class="grid grid--2">
-          <article class="card">
-            <h3>Modular Hiring</h3>
-            <p>Plug-in recruiters, only for the scope you need.</p>
-          </article>
-          <article class="card">
-            <h3>Contingency Search</h3>
-            <p>Pay on success. Shortlists that move the needle.</p>
-          </article>
-          <article class="card">
-            <h3>Executive Search</h3>
-            <p>Hands-on leadership hiring for pivotal roles.</p>
-          </article>
-          <article class="card">
-            <h3>Candidate Marketing</h3>
-            <p>We actively market shortlisted talent to decision-makers.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4) How We Work (Process) -->
-    <section class="section">
-      <div class="container">
-        <h2>How We Work</h2>
-        <div class="grid grid--2">
-          <div class="card step">
-            <div class="step-num">1</div>
-            <div>
-              <h3>Discover</h3>
-              <p>Define the role, the bar, and the business outcome. No fluff.</p>
-            </div>
-          </div>
-          <div class="card step">
-            <div class="step-num">2</div>
-            <div>
-              <h3>Map &amp; Source</h3>
-              <p>Targeted market maps and direct outreach. Zero spray-and-pray.</p>
-            </div>
-          </div>
-          <div class="card step">
-            <div class="step-num">3</div>
-            <div>
-              <h3>Assess &amp; Present</h3>
-              <p>Sharp screening, clean pipelines, decision-ready shortlists.</p>
-            </div>
-          </div>
-          <div class="card step">
-            <div class="step-num">4</div>
-            <div>
-              <h3>Close &amp; Support</h3>
-              <p>Offer navigation, references, and onboarding follow-through.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5) Why Expedite HRS -->
-    <section class="section">
-      <div class="container">
-        <h2>Why Expedite HRS</h2>
-        <ul class="ticks">
-          <li>Founder-led execution</li>
-          <li>Fast shortlists</li>
-          <li>Clean pipelines</li>
-          <li>Sharp screening</li>
-          <li>Transparent comms</li>
-          <li>Pune focus, India reach</li>
+<body>
+  <!-- Shared Header -->
+  <div class="header-wrap">
+    <header class="container nav">
+      <div class="brand">Expedite <span>HRS</span></div>
+      <nav>
+        <ul>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/jobs.html">Find Job</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </section>
+      </nav>
+      <a class="cta" href="/hire.html">Hire Expert Talent</a>
+    </header>
+  </div>
 
-    <!-- 6) Industries Served -->
-    <section class="section">
-      <div class="container">
-        <h2>Industries Served</h2>
-        <div class="tags" aria-label="Industries">
-          <span class="tag">SaaS</span>
-          <span class="tag">FinTech</span>
-          <span class="tag">Data/AI</span>
-          <span class="tag">Manufacturing</span>
-          <span class="tag">Consumer</span>
-          <span class="tag">Services</span>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Expedite HRS</h1>
+      <p class="muted">Precision recruiting, startup speed, enterprise discipline.</p>
+    </div>
+  </section>
+
+  <!-- Who We Are -->
+  <section class="section">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p class="muted" style="max-width:70ch">
+        We’re a Pune-based search firm built for founders and growth teams. We map, source, and present interview-ready talent fast — no noise, just outcomes.
+      </p>
+    </div>
+  </section>
+
+  <!-- What We Do (Services) -->
+  <section class="section">
+    <div class="container">
+      <h2>What We Do</h2>
+      <div class="grid-4">
+        <div class="card">
+          <h3>Modular Hiring</h3>
+          <p class="muted">Plug-in recruiters, only for the scope you need.</p>
+        </div>
+        <div class="card">
+          <h3>Contingency Search</h3>
+          <p class="muted">Pay on success. Shortlists that move the needle.</p>
+        </div>
+        <div class="card">
+          <h3>Executive Search</h3>
+          <p class="muted">Hands-on leadership hiring for pivotal roles.</p>
+        </div>
+        <div class="card">
+          <h3>Candidate Marketing</h3>
+          <p class="muted">We actively market shortlisted talent to decision-makers.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 7) Experience & Outcomes — placeholders -->
-    <section class="section">
-      <div class="container">
-        <h2>Experience &amp; Outcomes</h2>
-        <div class="stats">
-          <div class="stat">
-            <div class="num">48h</div>
-            <div class="label">Median time to shortlist*</div>
-          </div>
-          <div class="stat">
-            <div class="num">90%</div>
-            <div class="label">Offers accepted*</div>
-          </div>
-          <div class="stat">
-            <div class="num">30+ </div>
-            <div class="label">Startups served*</div>
-          </div>
-          <div class="stat">
-            <div class="num">₹X Cr</div>
-            <div class="label">Salaries closed*</div>
-          </div>
+  <!-- How We Work (Process) -->
+  <section class="section">
+    <div class="container">
+      <h2>How We Work</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Discover</h3>
+          <p class="muted">Role clarity, success profile, and must-have signals.</p>
         </div>
-        <p class="lede" style="margin-top:14px; font-size:14px; color:var(--muted);">*Replace with your live numbers.</p>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Map &amp; Source</h3>
+          <p class="muted">Target lists, passive outreach, and calibrated funnels.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Assess &amp; Present</h3>
+          <p class="muted">Sharp screening, clean notes, interview-ready shortlists.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>Close &amp; Support</h3>
+          <p class="muted">Offer orchestration and onboarding follow-through.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 8) Call to Action -->
-    <section class="cta">
-      <div class="container">
-        <a class="btn" href="/hire.html" aria-label="Hire Expert Talent">
-          Hire Expert Talent →
-        </a>
+  <!-- Why Expedite HRS -->
+  <section class="section">
+    <div class="container">
+      <h2>Why Expedite HRS</h2>
+      <ul class="list">
+        <li><strong>Founder-led execution</strong> — senior attention on every search.</li>
+        <li><strong>Fast shortlists</strong> — speed without sacrificing signal.</li>
+        <li><strong>Clean pipelines</strong> — transparent, organized, accountable.</li>
+        <li><strong>Sharp screening</strong> — less interviews, better outcomes.</li>
+        <li><strong>Transparent comms</strong> — crisp updates, zero surprises.</li>
+        <li><strong>Pune focus, India reach</strong> — local context, national access.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Industries Served -->
+  <section class="section">
+    <div class="container">
+      <h2>Industries Served</h2>
+      <div class="tags">
+        <span class="tag">SaaS</span>
+        <span class="tag">FinTech</span>
+        <span class="tag">Data / AI</span>
+        <span class="tag">Manufacturing</span>
+        <span class="tag">Consumer</span>
+        <span class="tag">Services</span>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- footer comes from your global layout / style.css -->
-  <footer></footer>
+  <!-- Experience & Outcomes (placeholders) -->
+  <section class="section">
+    <div class="container">
+      <h2>Experience &amp; Outcomes</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="kpi">3–5 days</div>
+          <div class="muted">Typical time to shortlist*</div>
+        </div>
+        <div class="stat">
+          <div class="kpi">80%+</div>
+          <div class="muted">Interview-to-offer conversion*</div>
+        </div>
+        <div class="stat">
+          <div class="kpi">100+ roles</div>
+          <div class="muted">Filled across levels*</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">* Replace with your verified numbers when ready.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container center">
+      <h2>Ready to hire with precision?</h2>
+      <p class="muted">Plug us in for speed, signal, and clean execution.</p>
+      <p><a class="cta" href="/hire.html">Hire Expert Talent</a></p>
+    </div>
+  </section>
+
+  <!-- Shared Footer -->
+  <footer id="contact">
+    <div class="container footer-inner">
+      <div class="foot-grid">
+        <div>
+          <strong>Contact</strong>
+          <div class="muted">Write to us and we’ll respond within 24 hours.</div>
+        </div>
+        <div><a class="cta" href="mailto:hello@expeditehrs.com?subject=Hiring%20Inquiry%20-%20Expedite%20HRS">Email Us</a></div>
+      </div>
+      <div class="muted" style="margin-top:14px;">© <span id="y"></span> Expedite HRS. All rights reserved.</div>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
