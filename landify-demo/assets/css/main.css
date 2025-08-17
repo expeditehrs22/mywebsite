@@ -3942,6 +3942,63 @@ section,
   }
 }
 
+/* Floating badges over hero illustration */
+.illustration-wrap { isolation: isolate; }
+.floating-badges {
+  position: absolute; inset: 0;
+  pointer-events: none; /* clicks pass through */
+}
+
+.float-badge{
+  position: absolute;
+  display:inline-flex; align-items:center;
+  gap:.35rem;
+  padding:.45rem .7rem;
+  font-size:.9rem; font-weight:500;
+  color:#0b2e29;                    /* dark teal text */
+  background:#ffffff;               /* white chip */
+  border:1px solid rgba(11,46,41,.12);
+  border-radius:999px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  z-index:2;
+  transform:translateZ(0);
+}
+
+/* starting positions */
+.badge-1{ top:8%;  left:10%; }
+.badge-2{ bottom:18%; right:8%; }
+.badge-3{ top:40%; left:-2%; }
+
+/* gentle drifting animations */
+@keyframes float-x { 
+  0%{ transform:translate(0,0); }
+  50%{ transform:translate(10px,-6px); }
+  100%{ transform:translate(0,0); }
+}
+@keyframes float-y { 
+  0%{ transform:translate(0,0); }
+  50%{ transform:translate(-10px,6px); }
+  100%{ transform:translate(0,0); }
+}
+
+.badge-1{ animation: float-x 6s ease-in-out infinite; }
+.badge-2{ animation: float-y 7s ease-in-out infinite; }
+.badge-3{ animation: float-x 8s ease-in-out infinite reverse; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .badge-1,.badge-2,.badge-3{ animation:none; }
+}
+
+/* Small screens: keep chips inside the image nicely */
+@media (max-width: 991.98px){
+  .badge-1{ top:4%; left:6%; }
+  .badge-2{ bottom:12%; right:6%; }
+  .badge-3{ top:auto; bottom:36%; left:4%; }
+  .float-badge{ font-size:.85rem; }
+}
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
