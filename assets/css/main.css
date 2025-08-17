@@ -4082,6 +4082,57 @@ section,
   #features .nav-tabs .nav-link { min-height: 96px; }
 }
 
+:root {
+  --bs-primary: #1657A2;         /* Expedite Blue */
+  --bs-primary-rgb: 22, 87, 162;
+
+  --bs-secondary: #F9A825;       /* Star Yellow */
+  --bs-secondary-rgb: 249, 168, 37;
+}
+
+/* Primary Brand Elements */
+.btn-primary,
+.nav-link.active,
+.nav-tabs .nav-link.active,
+a,
+.section-title span,
+.tab-icon i {
+  color: var(--bs-primary) !important;
+}
+
+.btn-primary,
+.nav-link.active,
+.nav-tabs .nav-link.active,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+/* Secondary Accent (hover + highlights) */
+a:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+.nav-link:hover,
+.nav-tabs .nav-link:hover {
+  color: var(--bs-secondary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+}
+
+/* Optional: Section title underline or decorative accents */
+.section-title h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 8px auto 0;
+  background: var(--bs-secondary);
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
