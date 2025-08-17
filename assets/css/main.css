@@ -4082,56 +4082,75 @@ section,
   #features .nav-tabs .nav-link { min-height: 96px; }
 }
 
-:root {
-  --bs-primary: #1657A2;         /* Expedite Blue */
-  --bs-primary-rgb: 22, 87, 162;
+/* === Expedite HRS Brand Override ===================== */
+/* Primary + Secondary */
+:root{
+  /* Many BootstrapMade themes read these: */
+  --accent-color: #1657A2 !important;         /* Expedite Blue */
+  --accent-color-rgb: 22,87,162 !important;
+  --contrast-color: #ffffff !important;
 
-  --bs-secondary: #F9A825;       /* Star Yellow */
-  --bs-secondary-rgb: 249, 168, 37;
+  /* Extra accent for hovers/highlights */
+  --brand-secondary: #F9A825 !important;      /* Star Yellow */
 }
 
-/* Primary Brand Elements */
+/* Buttons (primary / CTAs / pricing choose / header get started) */
 .btn-primary,
-.nav-link.active,
-.nav-tabs .nav-link.active,
-a,
-.section-title span,
-.tab-icon i {
-  color: var(--bs-primary) !important;
+.btn-cta,
+.btn-choose,
+.btn-getstarted {
+  background: #1657A2 !important;
+  border-color: #1657A2 !important;
+  color: #fff !important;
+}
+.btn-primary:hover,
+.btn-cta:hover,
+.btn-choose:hover,
+.btn-getstarted:hover {
+  background: #F9A825 !important;
+  border-color: #F9A825 !important;
+  color: #111 !important;
 }
 
-.btn-primary,
-.nav-link.active,
-.nav-tabs .nav-link.active,
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: var(--bs-primary) !important;
-  border-color: var(--bs-primary) !important;
+/* Nav */
+.navmenu a.active,
+.navmenu a:hover {
+  color: #1657A2 !important;
+}
+.header .btn-getstarted {
+  background: #1657A2 !important;
+  border-color: #1657A2 !important;
 }
 
-/* Secondary Accent (hover + highlights) */
-a:hover,
-.btn-primary:hover,
-.btn-primary:focus,
-.nav-link:hover,
+/* Tabs + feature icons */
+.nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
-  color: var(--bs-secondary) !important;
+  border-color: #1657A2 !important;
+  color: #1657A2 !important;
+}
+.tab-icon i,
+.feature-card .feature-icon i,
+.feature-box .feature-icon i {
+  color: #1657A2 !important;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: var(--bs-secondary) !important;
-  border-color: var(--bs-secondary) !important;
+/* Badges / pills / chips */
+.section-badge,
+.badge-title {
+  background: rgba(22,87,162,.10) !important;
+  color: #1657A2 !important;
 }
 
-/* Optional: Section title underline or decorative accents */
-.section-title h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  margin: 8px auto 0;
-  background: var(--bs-secondary);
+/* Links */
+a { color: #1657A2; }
+a:hover { color: #F9A825; }
+
+/* Decorative underline for section titles */
+.section-title h2::after{
+  content:"";
+  display:block;
+  width:52px;height:3px;margin:8px auto 0;
+  background:#F9A825;
 }
 
 /*--------------------------------------------------------------
