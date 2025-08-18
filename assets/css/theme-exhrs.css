@@ -129,5 +129,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   color: #1565C0 !important;
 }
 
+#header .logo .sitename { color: #1565C0 !important; }
+
 
 
