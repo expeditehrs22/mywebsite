@@ -4155,13 +4155,13 @@ a:hover { color: #F9A825; }
 }
 
 .footer .footer-logo {
-  height: 120px;   /* try 120px, adjust as needed */
+  height: 200px;   /* try 120px, adjust as needed */
   max-width: 100%;
 }
 
 .footer .logo img {
   display: block;
-  height: 120px;   /* same as above */
+  height: 200px;   /* same as above */
 }
 
 
