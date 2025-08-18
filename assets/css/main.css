@@ -4154,12 +4154,12 @@ a:hover { color: #F9A825; }
   background:#F9A825;
 }
 
-.footer .footer-logo {
-  height: auto;
-  width: 300px;   /* adjust to make it as big as you like */
-  max-width: 100%;
-  margin-bottom: 15px;
+footer.footer .logo img {
+  height: 140px !important;      /* make it big */
+  width: auto !important;
+  max-height: none !important;   /* remove theme cap */
   display: block;
+  margin-bottom: 12px;
 }
 
 
