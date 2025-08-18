@@ -124,16 +124,13 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   .footer .social-links{ gap: 10px; }
 }
 
-/* Force navbar horizontal on desktop */
-#navbar ul {
+/* Force navbar horizontal and remove bullets */
+#header .navbar ul{
   display: flex;
-  gap: 20px;          /* spacing between items */
   align-items: center;
+  gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-#navbar li {
-  display: inline-block;
-}
-
+#header .navbar li{ display: inline-block; }
