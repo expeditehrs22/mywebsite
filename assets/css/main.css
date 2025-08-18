@@ -5,8 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-<link href="assets/css/main.css" rel="stylesheet">
-<link href="assets/css/theme-exhrs.css" rel="stylesheet"> <!-- your override -->
+
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -4153,6 +4152,15 @@ a:hover { color: #F9A825; }
   display:block;
   width:52px;height:3px;margin:8px auto 0;
   background:#F9A825;
+}
+
+.footer .footer-logo {
+  height: 60px;
+  max-width: 100%;
+}
+.footer .logo img {
+  display: block;
+  height: 60px;
 }
 
 
