@@ -134,5 +134,30 @@ header#header a.logo h1.sitename {
 }
 
 
+/* --- OUR SERVICES: make the four tabs equal --- */
+#services .nav-tabs { 
+  display: flex;            /* lay items in a row */
+  flex-wrap: wrap;          /* wrap on smaller screens */
+  gap: 16px;                /* space between cards */
+}
+
+#services .nav-tabs .nav-item {
+  flex: 1 1 calc(25% - 16px);   /* 4 even columns on desktop */
+}
+
+@media (max-width: 991.98px) {
+  #services .nav-tabs .nav-item { 
+    flex: 1 1 calc(50% - 16px); /* 2 per row on tablet/mobile */
+  }
+}
+
+/* Make each tab look/behave like equal-height cards */
+#services .nav-tabs .nav-link {
+  height: 140px;                 /* same height for all */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
