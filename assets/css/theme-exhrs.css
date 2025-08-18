@@ -131,15 +131,3 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   gap: 16px;
 }
 
-#services .nav-tabs .nav-item {
-  flex: 1 1 0;               /* each takes equal width */
-}
-
-#services .nav-tabs .nav-link {
-  height: 140px;             /* force equal height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
