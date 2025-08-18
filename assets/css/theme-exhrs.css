@@ -1,0 +1,125 @@
+/* ========= Expedite HRS — final theme override ========= */
+/* Brand tokens */
+:root{
+  --accent-color: #1E5AA8;  /* brand blue (replaces old teal) */
+  --accent-2:    #F9A825;   /* star yellow accent */
+  /* Optional text tokens if your template uses them */
+  --heading-color: #0f172a;
+  --default-color: #334155;
+}
+
+/* Nav / header hover states (uses the site’s existing custom props, if present) */
+:root{
+  --nav-hover-color: var(--accent-color);
+  --nav-dropdown-hover-color: var(--accent-color);
+}
+
+/* Global text */
+h1,h2,h3,h4,h5,h6{ color: var(--heading-color); }
+body{ color: var(--default-color); }
+
+/* Links */
+a{ color: var(--accent-color); }
+a:hover{ color: color-mix(in srgb, var(--accent-color) 85%, black); }
+
+/* Buttons — primary + outline primary */
+.btn-primary{
+  color:#fff;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background: color-mix(in srgb, var(--accent-color) 85%, black);
+  border-color: color-mix(in srgb, var(--accent-color) 85%, black);
+}
+.btn-outline-primary{
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background: transparent;
+}
+.btn-outline-primary:hover{
+  color:#fff;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Forms & focus ring */
+input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:focus{
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--accent-color) 25%, transparent) !important;
+  outline: 0;
+}
+
+/* Pills / tabs — also fixes your “uneven tabs” */
+.features .nav-link{
+  min-height: 80px;                 /* equal height */
+  display: flex;
+  align-items: center;              /* vertical center */
+  justify-content: flex-start;      /* left align content */
+  gap: .5rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color) 25%, #e2e8f0);
+  color: var(--default-color);
+}
+.features .nav-link:hover{
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.features .nav-link.active,
+.features .nav-link.active:hover{
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Badges, pagination, progress, misc components commonly themed */
+.badge.bg-primary,
+.pagination .page-item.active .page-link,
+.progress-bar,
+.scroll-top{
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: #fff;
+}
+
+/* Footer — logo sizing helper (use if you add an <img>) */
+.footer .footer-logo{
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+/* Footer — social links horizontal + brand hover */
+.footer .social-links{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0;
+  margin: .5rem 0 0;
+  list-style: none;
+}
+.footer .social-links a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--accent-color) 25%, #e2e8f0);
+  color: var(--accent-color);
+  text-decoration: none;
+  background: rgba(0,0,0,0.04);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+.footer .social-links a:hover{
+  color: #fff;
+  background: var(--accent-color);
+  box-shadow: 0 0 0 2px var(--accent-2) inset; /* yellow star accent ring */
+  transform: translateY(-1px);
+}
+
+/* Mobile polish */
+@media (max-width: 420px){
+  .footer .footer-logo{ height: 48px; }
+  .footer .social-links{ gap: 10px; }
+}
