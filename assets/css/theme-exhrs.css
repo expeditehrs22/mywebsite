@@ -124,40 +124,22 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   .footer .social-links{ gap: 10px; }
 }
 
-#navbar .navbar-brand,
-.navbar a.navbar-brand {
-  color: #1565C0 !important;
-}
-
-header#header a.logo h1.sitename {
-  color: red !important;
-}
-
-
-/* --- OUR SERVICES: make the four tabs equal --- */
-#services .nav-tabs { 
-  display: flex;            /* lay items in a row */
-  flex-wrap: wrap;          /* wrap on smaller screens */
-  gap: 16px;                /* space between cards */
+/* --- Equalize Service Tabs --- */
+#services .nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 #services .nav-tabs .nav-item {
-  flex: 1 1 calc(25% - 16px);   /* 4 even columns on desktop */
+  flex: 1 1 0;               /* each takes equal width */
 }
 
-@media (max-width: 991.98px) {
-  #services .nav-tabs .nav-item { 
-    flex: 1 1 calc(50% - 16px); /* 2 per row on tablet/mobile */
-  }
-}
-
-/* Make each tab look/behave like equal-height cards */
 #services .nav-tabs .nav-link {
-  height: 140px;                 /* same height for all */
+  height: 140px;             /* force equal height */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
-
-
