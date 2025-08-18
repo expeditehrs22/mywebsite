@@ -124,12 +124,6 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   .footer .social-links{ gap: 10px; }
 }
 
-.navbar .navbar-brand {
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-  font-weight: 800;   /* ExtraBold */
-  color: #1565C0 !important; /* logo blue */
-  font-size: 1.5rem; /* adjust size as needed */
-  text-decoration: none;
-}
+.navbar .navbar-brand { color: #1565C0 !important; }
+
 
