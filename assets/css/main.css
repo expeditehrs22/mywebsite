@@ -5,6 +5,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+<link href="assets/css/main.css" rel="stylesheet">
+<link href="assets/css/theme-exhrs.css" rel="stylesheet"> <!-- your override -->
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -4152,7 +4154,7 @@ a:hover { color: #F9A825; }
   width:52px;height:3px;margin:8px auto 0;
   background:#F9A825;
 }
-.navbar .navbar-brand { color: #1565C0 !important; }
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
