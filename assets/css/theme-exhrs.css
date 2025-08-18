@@ -118,3 +118,29 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   .footer .footer-logo{ height:48px; }
   .footer .social-links{ gap:10px; }
 }
+/* Force footer social icons horizontal */
+footer .social-links,
+.footer .social-links,
+#footer .social-links {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+footer .social-links li,
+.footer .social-links li,
+#footer .social-links li {
+  display: inline-block !important;
+}
+
+footer .social-links a,
+.footer .social-links a,
+#footer .social-links a {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
