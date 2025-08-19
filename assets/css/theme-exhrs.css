@@ -119,36 +119,19 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   .footer .social-links{ gap:10px; }
 }
 
-/* Force footer social icons horizontal */
-#footer .social-links {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 12px !important;
-  margin: 0 !important;
-  padding: 0 !important;
+/* Force footer social row (beats template rules) */
+#footer .footer-top .footer-info .social-links{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center !important;
+  gap:12px !important;
+  margin:0 !important;
+  padding:0 !important;
 }
-
-#footer .social-links a {
-  display: inline-flex !important;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: var(--accent-color);
-  background: rgba(0,0,0,0.04);
-  text-decoration: none;
-  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
-}
-
-#footer .social-links a:hover {
-  color:#fff;
-  background: var(--accent-color);
-  box-shadow: 0 0 0 2px var(--accent-2) inset;
-  transform: translateY(-1px);
-}
-
-#footer .social-links i {
-  font-size: 18px;
+#footer .footer-top .footer-info .social-links > a{
+  display:inline-flex !important;
+  width:auto !important;    /* kills any width:100% */
+  height:40px; min-width:40px;
+  justify-content:center; align-items:center;
+  border-radius:50%;
 }
