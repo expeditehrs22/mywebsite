@@ -139,7 +139,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
 #footer img.footer-logo,
 #footer .footer-brand img,
 #footer .logo img {
-  height: 96px !important;      /* adjust 72–110px to taste */
+  height: 120px !important;      /* adjust 72–110px to taste */
   width: auto !important;
   max-height: none !important;
   display: block !important;
