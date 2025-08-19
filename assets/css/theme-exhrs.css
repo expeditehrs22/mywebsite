@@ -135,14 +135,13 @@ input:focus, select:focus, textarea:focus, .form-control:focus, .form-select:foc
   justify-content:center; align-items:center;
   border-radius:50%;
 }
-/* Footer logo bigger */
-.footer .footer-logo {
-  height: 80px;   /* adjust: 72–96px if you want even larger */
-  width: auto;
-  display: block;
-}
-@media (max-width: 420px) {
-  .footer .footer-logo {
-    height: 60px; /* smaller on small phones */
-  }
+/* Footer logo — override template cap */
+#footer img.footer-logo,
+#footer .footer-brand img,
+#footer .logo img {
+  height: 96px !important;      /* adjust 72–110px to taste */
+  width: auto !important;
+  max-height: none !important;
+  display: block !important;
+  line-height: 1 !important;
 }
