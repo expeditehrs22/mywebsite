@@ -28,8 +28,8 @@
     <meta property="twitter:image" content="https://www.expeditehrs.in/exhrs-logo.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231D4ED8%22/><text x=%2250%%22 y=%2255%%22 font-size=%2255%22 font-weight=%22bold%22 fill=%22white%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22>E</text><circle cx=%2280%22 cy=%2225%22 r=%2210%22 fill=%22%23F59E0B%22/></svg>">
-
+    <link rel="icon" type="image/png" href="favicon.png">
+    
     <!-- Structured Data (JSON-LD for Google Search) -->
     <script type="application/ld+json">
     {
@@ -83,31 +83,30 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-blue selection:text-white">
 
-    <!-- Header / Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
-        <div class="w-full px-6 lg:px-16 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="relative w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center font-black text-white text-xl shadow-lg shadow-brand-blue/30 transform skew-x-[-6deg] group-hover:scale-105 transition">
-                    E
-                    <div class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-brand-gold rounded-full flex items-center justify-center text-[8px] font-bold text-slate-950 shadow">✦</div>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-extrabold text-lg tracking-tight text-white leading-none">Expedite<span class="text-brand-blue">HRS</span></span>
-                    <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold mt-0.5">Recruitment Solutions</span>
-                </div>
-            </a>
-            
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#expertise" class="hover:text-brand-blue transition">Expertise</a>
-                <a href="#footprint" class="hover:text-brand-blue transition">Footprint</a>
-                <a href="#about" class="hover:text-brand-blue transition">About</a>
-            </nav>
+<!-- Header / Navbar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="w-full px-6 lg:px-16 h-20 flex items-center justify-between">
+        
+        <!-- Updated Logo Integration -->
+        <a href="#" class="flex items-center gap-3 group">
+            <img src="exhrs-logo.png" alt="Expedite HRS Logo" class="h-10 w-auto object-contain">
+            <div class="flex flex-col">
+                <span class="font-extrabold text-lg tracking-tight text-white leading-none">Expedite<span class="text-brand-blue">HRS</span></span>
+                <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold mt-0.5">Recruitment Solutions</span>
+            </div>
+        </a>
+        
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+            <a href="#expertise" class="hover:text-brand-blue transition">Expertise</a>
+            <a href="#footprint" class="hover:text-brand-blue transition">Footprint</a>
+            <a href="#about" class="hover:text-brand-blue transition">About</a>
+        </nav>
 
-            <a href="#contact" class="bg-brand-blue hover:bg-blue-600 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-brand-blue/20">
-                Connect With Us
-            </a>
-        </div>
-    </header>
+        <a href="#contact" class="bg-brand-blue hover:bg-blue-600 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-brand-blue/20">
+            Connect With Us
+        </a>
+    </div>
+</header>
 
     <!-- Hero Section: Enterprise Gateway -->
     <section class="relative min-h-screen w-full flex items-center justify-center bg-brand-darkBlue bg-grid-pattern pt-24 overflow-hidden">
