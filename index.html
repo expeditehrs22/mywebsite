@@ -76,6 +76,7 @@
   </header>
   
   <!-- HERO SECTION -->
+  <!-- HERO SECTION WITH AUTO-SLIDING CAROUSEL -->
   <section class="relative pt-16 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
@@ -121,20 +122,94 @@
         </div>
       </div>
 
-      <!-- Right Image / Corporate Placeholder -->
+      <!-- Right Column: Auto-Sliding Carousel -->
       <div class="lg:col-span-5 relative">
         <div class="relative mx-auto max-w-md lg:max-w-none">
           <div class="absolute -inset-4 bg-gradient-to-tr from-blue-600/20 to-amber-400/20 rounded-3xl blur-2xl -z-10"></div>
-          <div class="bg-white p-3 rounded-3xl shadow-2xl border border-slate-200">
-            <!-- Corporate placeholder image -->
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Corporate Team Collaboration" class="rounded-2xl object-cover w-full h-[380px]">
-            <div class="p-4 flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
-                <span class="text-sm font-semibold text-slate-700">Active Talent Pools Online</span>
+          
+          <!-- Carousel Container -->
+          <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden relative h-[460px]">
+            
+            <!-- Slide 1 -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-100 flex flex-col">
+              <div class="h-[260px] w-full overflow-hidden bg-slate-100">
+                <img src="hero-slide-1.jpg" alt="Inside Sales & B2B SaaS Growth" class="w-full h-full object-cover">
               </div>
-              <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Verified Profiles</span>
+              <div class="p-6 flex-1 bg-white flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Specialty 01</span>
+                  <h3 class="font-bold text-brand-darkBlue text-lg mt-2">Inside Sales & B2B SaaS Growth</h3>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">SDRs, BDRs, Account Executives, and Growth Managers for remote and office-first tech teams across Bengaluru, Pune, Gurgaon, and Hyderabad.</p>
+                </div>
+                <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-400">
+                  <span>Pan-India Sourcing</span>
+                  <span class="font-semibold text-blue-600">Slide 1 of 4</span>
+                </div>
+              </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0 flex flex-col">
+              <div class="h-[260px] w-full overflow-hidden bg-slate-100">
+                <img src="hero-slide-2.jpg" alt="Voice & Tele-Processes" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex-1 bg-white flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Specialty 02</span>
+                  <h3 class="font-bold text-brand-darkBlue text-lg mt-2">Voice & Tele-Processes (Domestic & Intl)</h3>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">High-volume customer success, voice support, and tele-sales specialists for BPOs, fintechs, and consumer brands.</p>
+                </div>
+                <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-400">
+                  <span>High-Velocity Hiring</span>
+                  <span class="font-semibold text-blue-600">Slide 2 of 4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0 flex flex-col">
+              <div class="h-[260px] w-full overflow-hidden bg-slate-100">
+                <img src="hero-slide-3.jpg" alt="Business Development & Field Sales" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex-1 bg-white flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Specialty 03</span>
+                  <h3 class="font-bold text-brand-darkBlue text-lg mt-2">Business Development & Field Sales</h3>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Regional expansion leads, channel partners, and direct sales executives for Pan-India commercial operations.</p>
+                </div>
+                <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-400">
+                  <span>Strategic Expansion</span>
+                  <span class="font-semibold text-blue-600">Slide 3 of 4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0 flex flex-col">
+              <div class="h-[260px] w-full overflow-hidden bg-slate-100">
+                <img src="hero-slide-4.jpg" alt="GTM & Executive Search" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex-1 bg-white flex flex-col justify-between">
+                <div>
+                  <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full uppercase tracking-wider">Specialty 04</span>
+                  <h3 class="font-bold text-brand-darkBlue text-lg mt-2">GTM & Executive Search</h3>
+                  <p class="text-xs text-slate-600 mt-1 leading-relaxed">Sales Directors, Revenue Operations (RevOps), and marketing heads for early-to-mid-stage high-growth startups.</p>
+                </div>
+                <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs text-slate-400">
+                  <span>Executive Leadership</span>
+                  <span class="font-semibold text-blue-600">Slide 4 of 4</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Indicators Dots -->
+            <div class="absolute bottom-3 right-4 z-20 flex gap-1.5 bg-white/80 backdrop-blur px-2.5 py-1 rounded-full shadow-sm">
+              <button onclick="currentSlide(0)" class="w-2 h-2 rounded-full bg-blue-600 transition-all indicator-dot"></button>
+              <button onclick="currentSlide(1)" class="w-2 h-2 rounded-full bg-slate-300 transition-all indicator-dot"></button>
+              <button onclick="currentSlide(2)" class="w-2 h-2 rounded-full bg-slate-300 transition-all indicator-dot"></button>
+              <button onclick="currentSlide(3)" class="w-2 h-2 rounded-full bg-slate-300 transition-all indicator-dot"></button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -142,6 +217,48 @@
     </div>
   </section>
 
+  <!-- JavaScript for Automatic Carousel Slider -->
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.indicator-dot');
+    let slideInterval;
+
+    function showSlides(n) {
+      if (n >= slides.length) slideIndex = 0;
+      if (n < 0) slideIndex = slides.length - 1;
+      
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('opacity-100', i === slideIndex);
+        slide.classList.toggle('opacity-0', i !== slideIndex);
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-blue-600', i === slideIndex);
+        dot.classList.toggle('bg-slate-300', i !== slideIndex);
+        dot.classList.toggle('w-6', i === slideIndex); // Active indicator pill expansion
+      });
+    }
+
+    function nextSlide() {
+      slideIndex++;
+      showSlides(slideIndex);
+    }
+
+    function currentSlide(n) {
+      slideIndex = n;
+      showSlides(slideIndex);
+      resetTimer();
+    }
+
+    function resetTimer() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 4500); // Change slide every 4.5 seconds
+    }
+
+    // Initialize auto slide
+    slideInterval = setInterval(nextSlide, 4500);
+  </script>
   <!-- INDUSTRIES WE SERVE -->
   <section id="industries" class="py-20 px-4 sm:px-6 lg:px-8 bg-brand-bgLight">
     <div class="max-w-7xl mx-auto">
