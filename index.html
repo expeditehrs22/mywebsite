@@ -1,417 +1,462 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary SEO Meta Tags -->
-    <title>Expedite HRS | Precision Recruitment Across Industries & Scale</title>
-    <meta name="title" content="Expedite HRS | Precision Recruitment Across Industries & Scale">
-    <meta name="description" content="15+ years of executive search and recruitment excellence. Connecting high-caliber leadership and specialized professionals across Pune, Maharashtra, and Pan-India.">
-    <meta name="keywords" content="recruitment agency Pune, executive search Maharashtra, talent acquisition, hiring solutions, IT staffing, B2B sales hiring, HR consultancy India, Expedite HRS">
-    <meta name="author" content="Expedite HRS">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.expeditehrs.in/">
-
-    <!-- Open Graph / Facebook / LinkedIn Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.expeditehrs.in/">
-    <meta property="og:title" content="Expedite HRS | Precision Recruitment Across Industries & Scale">
-    <meta property="og:description" content="15+ years of executive search and recruitment excellence across Pune, Maharashtra, and Pan-India.">
-    <meta property="og:image" content="https://www.expeditehrs.in/exhrs-logo.png">
-
-    <!-- Twitter Meta Tags -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.expeditehrs.in/">
-    <meta property="twitter:title" content="Expedite HRS | Precision Recruitment Across Industries & Scale">
-    <meta property="twitter:description" content="15+ years of executive search and recruitment excellence across Pune, Maharashtra, and Pan-India.">
-    <meta property="twitter:image" content="https://www.expeditehrs.in/exhrs-logo.png">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    
-    <!-- Structured Data (JSON-LD for Google Search) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EmploymentAgency",
-      "name": "Expedite HRS",
-      "url": "https://www.expeditehrs.in/",
-      "logo": "https://www.expeditehrs.in/exhrs-logo.png",
-      "description": "Precision recruitment solutions, executive search, and multi-industry talent acquisition with 15+ years of expertise.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "addressCountry": "IN"
-      },
-      "areaServed": ["Pune", "Maharashtra", "India"],
-      "founder": "Expedite HRS",
-      "knowsAbout": ["Executive Search", "IT Staffing", "BFSI Recruitment", "Manufacturing Staffing", "Corporate Sales Hiring"]
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expedite HRS | Premier GTM & Executive Search across India</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#1D4ED8',
+              darkBlue: '#1E3A8A',
+              lightBlue: '#EFF6FF',
+              amber: '#F59E0B',
+              lightAmber: '#FEF3C7',
+              slate: '#0F172A',
+              muted: '#64748B',
+              bgLight: '#F8FAFC'
+            }
+          }
+        }
+      }
     }
-    </script>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            blue: '#1D4ED8',
-                            darkBlue: '#0F172A',
-                            navy: '#1E293B',
-                            gold: '#F59E0B',
-                            goldLight: '#FBBF24'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .bg-grid-pattern {
-            background-size: 40px 40px;
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-        }
-    </style>
+  </script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-blue selection:text-white">
+<body class="bg-brand-bgLight text-brand-slate antialiased selection:bg-brand-amber selection:text-brand-slate">
 
-<!-- Header / Navbar -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
-    <div class="w-full px-6 lg:px-16 h-20 flex items-center justify-between">
-        
-        <!-- Updated Logo Integration -->
-        <a href="#" class="flex items-center gap-3 group">
-            <img src="exhrs-logo.png" alt="Expedite HRS Logo" class="h-16 w-auto object-contain">
-            <div class="flex flex-col">
-                <span class="font-extrabold text-lg tracking-tight text-white leading-none">Expedite<span class="text-brand-blue">HRS</span></span>
-                <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold mt-0.5">Recruitment Solutions</span>
-            </div>
-        </a>
-        
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="#expertise" class="hover:text-brand-blue transition">Expertise</a>
-            <a href="#footprint" class="hover:text-brand-blue transition">Footprint</a>
-            <a href="#about" class="hover:text-brand-blue transition">About</a>
-        </nav>
+  <!-- TOP NOTIFICATION BAR -->
+  <div class="bg-brand-darkBlue text-white text-xs sm:text-sm py-2 px-4 text-center font-medium">
+    🚀 Pune HQ & Pan-India Sourcing | Scaling teams from Real Estate & Semiconductor to EV, IT, and FMCG. 
+    <a href="https://wa.me/919322057179?text=Hi%20Dinesh,%20I%20want%20to%20discuss%20hiring%20mandates." target="_blank" class="underline ml-2 text-amber-300 hover:text-white font-semibold">Connect on WhatsApp →</a>
+  </div>
 
-        <a href="#contact" class="bg-brand-blue hover:bg-blue-600 text-white font-medium px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-brand-blue/20">
-            Connect With Us
+  <!-- HEADER / NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
+          <!-- Stylized E Icon matching logo concept -->
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H16M4 18H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight text-brand-darkBlue">Expedite <span class="text-blue-600">HRS</span></span>
+          <span class="text-[10px] tracking-widest uppercase text-slate-500 font-semibold">Recruitment & Talent</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+        <a href="#specialties" class="hover:text-blue-600 transition-colors">Specialties</a>
+        <a href="#industries" class="hover:text-blue-600 transition-colors">Industries</a>
+        <a href="#process" class="hover:text-blue-600 transition-colors">Process</a>
+        <a href="https://forjob.in" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-1">Candidate Portal <span class="text-xs px-1.5 py-0.5 bg-blue-100 rounded-full">forjob.in</span></a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://www.linkedin.com/in/hirebetterfaster" target="_blank" class="hidden sm:inline-flex items-center justify-center p-2.5 rounded-xl border border-slate-300 text-slate-700 hover:bg-slate-100 transition-all">
+          <svg class="w-5 h-5 text-blue-700" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
         </a>
+        <a href="https://wa.me/919322057179?text=Hi%20Dinesh,%20I%20want%20to%20discuss%20hiring%20support." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-lg shadow-blue-600/25 transition-all">
+          <svg class="w-4 h-4 text-amber-300 fill-amber-300" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          Employer WhatsApp
+        </a>
+      </div>
     </div>
-</header>
+  </header>
 
-    <!-- Hero Section: Enterprise Gateway -->
-    <section class="relative min-h-screen w-full flex items-center justify-center bg-brand-darkBlue bg-grid-pattern pt-24 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/50 to-slate-950"></div>
-        <div class="relative w-full max-w-7xl mx-auto px-6 lg:px-12 py-20 text-center">
-            
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-blue/10 border border-brand-blue/30 text-brand-gold text-xs font-semibold mb-8 shadow-inner">
-                <span>✦ 15+ Years of Executive Search & Recruitment Excellence</span>
+  <!-- HERO SECTION -->
+  <section class="relative pt-16 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-semibold tracking-wide uppercase">
+          <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+          Boutique Executive Search & Pan-India GTM Hiring
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-brand-darkBlue leading-[1.1]">
+          Precision talent solutions for enterprises <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">that scale momentum.</span>
+        </h1>
+
+        <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+          From high-velocity inside sales and executive leadership to specialized technical and operational engineering roles. We eliminate hiring friction across diverse industrial sectors with curated candidate pipelines delivered in days.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+          <a href="https://wa.me/919322057179?text=Hi%20Dinesh,%20I%20am%20an%20employer%20looking%20to%20hire%20talent." target="_blank" class="inline-flex justify-center items-center px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-base shadow-xl shadow-blue-600/30 transition-all">
+            Hire Talent via WhatsApp
+          </a>
+          <a href="https://forjob.in" target="_blank" class="inline-flex justify-center items-center px-8 py-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-base border border-slate-300 transition-all">
+            Job Seekers: Visit forjob.in →
+          </a>
+        </div>
+
+        <!-- Trust Badges / Metrics -->
+        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-200 mt-8">
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-blue-600">&lt; 10 Days</div>
+            <div class="text-xs text-slate-500 font-medium mt-0.5">Average Shortlist Turnaround</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-slate-900">95%+</div>
+            <div class="text-xs text-slate-500 font-medium mt-0.5">90-Day Retention Rate</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-bold text-amber-500">Pan-India</div>
+            <div class="text-xs text-slate-500 font-medium mt-0.5">Delivery Footprint</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image / Corporate Placeholder -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-md lg:max-w-none">
+          <div class="absolute -inset-4 bg-gradient-to-tr from-blue-600/20 to-amber-400/20 rounded-3xl blur-2xl -z-10"></div>
+          <div class="bg-white p-3 rounded-3xl shadow-2xl border border-slate-200">
+            <!-- Corporate placeholder image -->
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Corporate Team Collaboration" class="rounded-2xl object-cover w-full h-[380px]">
+            <div class="p-4 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                <span class="text-sm font-semibold text-slate-700">Active Talent Pools Online</span>
+              </div>
+              <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full">Verified Profiles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section id="industries" class="py-20 px-4 sm:px-6 lg:px-8 bg-brand-bgLight">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-blue-600 font-semibold text-xs uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">Multi-Sector Expertise</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-darkBlue mt-3 mb-4">Serving Every Pillar of Modern Industry</h2>
+        <p class="text-slate-600">We source specialized talent across complex, fast-growing, and established sectors pan-India.</p>
+      </div>
+
+      <!-- Industry Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        
+        <!-- Industry Card -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">RE</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Real Estate</h3>
+          <p class="text-xs text-slate-500">Sales, leasing & project management</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">SC</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Semiconductor</h3>
+          <p class="text-xs text-slate-500">VLSI, core R&D & engineering</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">CM</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Cement</h3>
+          <p class="text-xs text-slate-500">Operations, supply chain & plant tech</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">CH</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Chemical</h3>
+          <p class="text-xs text-slate-500">Process engineering & quality lead</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">IT</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Information Tech</h3>
+          <p class="text-xs text-slate-500">SaaS, tech leads & development</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">HC</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Healthcare</h3>
+          <p class="text-xs text-slate-500">Clinical, admin & hospital staffing</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">LS</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Life Sciences</h3>
+          <p class="text-xs text-slate-500">Biotech, pharma & research</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">AU</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Automotive</h3>
+          <p class="text-xs text-slate-500">Manufacturing, design & sales</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">EV</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Electric Vehicles</h3>
+          <p class="text-xs text-slate-500">Battery tech, R&D & growth GTM</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">PR</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Product Tech</h3>
+          <p class="text-xs text-slate-500">PMs, UX/UI & engineering leads</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">SV</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Services</h3>
+          <p class="text-xs text-slate-500">BPO, voice, tele-sales & consulting</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">FM</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">FMCG</h3>
+          <p class="text-xs text-slate-500">Distribution, retail & brand growth</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">CN</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Construction</h3>
+          <p class="text-xs text-slate-500">Civil engineering & execution</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold mb-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">DC</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Data Centers</h3>
+          <p class="text-xs text-slate-500">Infrastructure & cloud specialists</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all group">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors">EN</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Engineering</h3>
+          <p class="text-xs text-slate-500">Heavy machinery & R&D leaders</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SPECIALTIES / SERVICES -->
+  <section id="specialties" class="py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+        <div class="lg:col-span-6">
+          <span class="text-blue-600 font-semibold text-xs uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Core Specialities</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-darkBlue mt-3 mb-4">Precision Hiring Across Critical Functional Verticals</h2>
+          <p class="text-slate-600 leading-relaxed">
+            We focus strictly on high-impact roles where talent directly drives revenue, market expansion, and technical excellence.
+          </p>
+        </div>
+        <div class="lg:col-span-6 flex justify-end">
+          <a href="https://wa.me/919322057179?text=Hi%20Dinesh,%20I%20want%20to%20discuss%20a%20specific%20mandate." target="_blank" class="px-6 py-3 rounded-xl bg-brand-darkBlue text-white font-semibold text-sm hover:bg-blue-800 transition-all shadow-md">
+            Request Custom Mandate Consultation →
+          </a>
+        </div>
+      </div>
+
+      <!-- Specialties Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-brand-bgLight p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg mb-6 shadow-md shadow-blue-500/20">01</div>
+          <h3 class="text-xl font-bold text-brand-darkBlue mb-3">Sales, Telesales & Growth GTM</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Inside Sales Executives, BDRs, SDRs, Enterprise Account Executives, and high-velocity voice process closers who build robust revenue pipelines.
+          </p>
+          <ul class="space-y-2 text-xs font-semibold text-slate-700">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Pre-scored communication agility</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Quota-carrying proven track records</li>
+          </ul>
+        </div>
+
+        <div class="bg-brand-bgLight p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-lg mb-6 shadow-md shadow-amber-500/20">02</div>
+          <h3 class="text-xl font-bold text-brand-darkBlue mb-3">Executive Search & Leadership</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            CXOs, VPs, Directors, and functional heads who steer corporate strategy, operational scale, and regional P&L management across India.
+          </p>
+          <ul class="space-y-2 text-xs font-semibold text-slate-700">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Discreet headhunting methodology</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Cultural and leadership alignment</li>
+          </ul>
+        </div>
+
+        <div class="bg-brand-bgLight p-8 rounded-3xl border border-slate-200 hover:shadow-xl transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-bold text-lg mb-6 shadow-md shadow-blue-500/20">03</div>
+          <h3 class="text-xl font-bold text-brand-darkBlue mb-3">Technical & Niche Engineering</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Specialized engineering talent for Semiconductors, EV, R&D labs, Data Centers, and Advanced Manufacturing plants.
+          </p>
+          <ul class="space-y-2 text-xs font-semibold text-slate-700">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Deep technical screening</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Verified domain credentials</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RECRUITMENT PROCESS SECTION WITH CORPORATE IMAGERY -->
+  <section id="process" class="py-20 px-4 sm:px-6 lg:px-8 bg-brand-bgLight border-t border-slate-200">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image placeholder -->
+        <div class="lg:col-span-6">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-blue-600/15 to-amber-400/15 rounded-3xl blur-xl -z-10"></div>
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Corporate Strategy Meeting" class="rounded-3xl shadow-xl border border-slate-200 object-cover w-full h-[420px]">
+          </div>
+        </div>
+
+        <!-- Right Steps -->
+        <div class="lg:col-span-6 space-y-6">
+          <div>
+            <span class="text-blue-600 font-semibold text-xs uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">Streamlined Execution</span>
+            <h2 class="text-3xl font-extrabold text-brand-darkBlue mt-3 mb-2">Our 3-Step Search & Placement Model</h2>
+            <p class="text-slate-600 text-sm">Designed for speed, transparency, and uncompromising quality.</p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">1</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base mb-1">ICP & Requirements Mapping</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">We analyze your role expectations, cultural DNA, and compensation benchmarks to map out the ideal candidate profile.</p>
+              </div>
             </div>
 
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-5xl mx-auto leading-[1.1]">
-                Precision Recruitment Across <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-blue-400 to-brand-gold">Industries & Scale</span>
-            </h1>
-
-            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-normal leading-relaxed">
-                Empowering organizations with agile talent acquisition, connecting high-caliber leadership and specialized professionals across Pune, Maharashtra, and Pan-India.
-            </p>
-
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-brand-blue hover:bg-blue-600 text-white font-semibold px-8 py-4 rounded-xl transition shadow-xl shadow-brand-blue/25">
-                    Start a Conversation
-                </a>
-                <a href="#expertise" class="bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold px-8 py-4 rounded-xl transition">
-                    Explore Our Capabilities
-                </a>
+            <div class="flex gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0">2</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base mb-1">Rigorous Pre-Screening & Hotlist</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Candidates are filtered and pre-scored through our multi-stage evaluation pipeline before a curated hotlist reaches you.</p>
+              </div>
             </div>
 
-            <!-- Quick Stats Bar -->
-            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-slate-800/80 text-left">
-                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-extrabold text-white">15+</div>
-                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Years Expertise</div>
-                </div>
-                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-extrabold text-brand-blue">Pan-India</div>
-                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Delivery Network</div>
-                </div>
-                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-extrabold text-white">Multi-Sector</div>
-                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Industry Footprint</div>
-                </div>
-                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-extrabold text-brand-gold">Agile</div>
-                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-medium">Execution Model</div>
-                </div>
+            <div class="flex gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0">3</div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-base mb-1">Fast Closure & Onboarding</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Direct interview coordination, feedback alignment, and offer negotiation handled seamlessly for swift closure.</p>
+              </div>
             </div>
+          </div>
 
         </div>
-    </section>
 
-    <!-- Multi-Industry Expertise Section -->
-    <section id="expertise" class="w-full bg-slate-900 py-24 border-t border-slate-800">
-        <div class="w-full max-w-7xl mx-auto px-6 lg:px-12">
-            
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                <div>
-                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Comprehensive Sectors</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Full-Spectrum Talent Solutions</h2>
-                </div>
-                <p class="text-slate-400 max-w-md mt-4 md:mt-0 text-sm leading-relaxed">
-                    We deliver customized recruitment mandates across a wide spectrum of growing industries, catering to startups, mid-market enterprises, and conglomerates.
-                </p>
-            </div>
+      </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-brand-blue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition">💻</div>
-                    <h3 class="text-xl font-bold text-white mb-3">IT & Digital Transformation</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Sourcing top software engineering, product, data, and infrastructure talent across tech corridors.</p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-brand-blue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition">📊</div>
-                    <h3 class="text-xl font-bold text-white mb-3">BFSI & Financial Services</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Placing compliance officers, financial analysts, risk managers, and core banking professionals.</p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-brand-blue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition">⚙️</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Manufacturing & Supply Chain</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Providing operational leaders, plant managers, and technical specialists for industrial hubs.</p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-brand-blue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition">🏥</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Healthcare & Clinical Staffing</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Connecting hospitals and healthcare networks with specialized medical and administrative talent.</p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-brand-blue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition">🎯</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Corporate Sales & B2B</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Building high-performance revenue-generating teams and executive sales leadership.</p>
-                </div>
-                <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 hover:border-brand-blue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-110 transition">⚡</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Executive Search & Leadership</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Discreet headhunting and rigorous evaluation for C-suite and senior management mandates.</p>
-                </div>
-            </div>
+    </div>
+  </section>
 
+  <!-- DUAL SIDED CONVERSION CTA BANNER -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-brand-darkBlue text-white relative overflow-hidden">
+    <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-5xl mx-auto text-center relative z-10 space-y-8">
+      
+      <span class="text-amber-400 font-semibold text-xs uppercase tracking-widest bg-blue-950 px-4 py-1.5 rounded-full border border-blue-800">
+        Connect With Expedite HRS
+      </span>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+        Ready to accelerate your hiring or find your next career milestone?
+      </h2>
+
+      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">
+        Whether you are a hiring manager scaling up across India or a professional seeking top-tier career opportunities, we make the connection seamless.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+        <!-- Employer WhatsApp CTA -->
+        <a href="https://wa.me/919322057179?text=Hi%20Dinesh,%20I%20want%20to%20discuss%20recruitment%20services." target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center gap-3 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold shadow-xl shadow-blue-900/50 transition-all">
+          <svg class="w-5 h-5 text-amber-300 fill-amber-300" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          Employers: WhatsApp Dinesh (+91 93220 57179)
+        </a>
+
+        <!-- Employer LinkedIn CTA -->
+        <a href="https://www.linkedin.com/in/hirebetterfaster" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center gap-3 px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold border border-slate-700 transition-all">
+          <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          Connect on LinkedIn
+        </a>
+
+        <!-- Candidate Job Portal Placeholder -->
+        <a href="https://forjob.in" target="_blank" class="w-full sm:w-auto inline-flex justify-center items-center gap-3 px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-brand-slate font-bold shadow-xl shadow-amber-500/20 transition-all">
+          Candidates: Explore forjob.in →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white text-slate-600 py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      
+      <div class="space-y-4 md:col-span-2">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold">E</div>
+          <span class="text-lg font-bold text-brand-darkBlue">Expedite HRS</span>
         </div>
-    </section>
+        <p class="text-xs text-slate-500 max-w-sm leading-relaxed">
+          Boutique recruitment consultancy headquartered in Pune, delivering high-performance candidate pipelines and executive search solutions across Pan-India markets.
+        </p>
+      </div>
 
-    <!-- Geographic Footprint Section -->
-    <section id="footprint" class="w-full bg-slate-950 py-24 border-t border-slate-800">
-        <div class="w-full max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-brand-blue text-xs font-bold uppercase tracking-widest">Regional Advantage</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">From Pune to Pan-India Scale</h2>
-                <p class="text-slate-400 mt-6 text-base leading-relaxed">
-                    Headquartered in Pune with deep regional insights across Maharashtra’s premier economic zones, we leverage robust sourcing networks to execute complex recruitment mandates across India.
-                </p>
-                <div class="mt-8 space-y-4">
-                    <div class="flex items-start gap-4">
-                        <div class="w-6 h-6 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center text-xs font-bold mt-1">✓</div>
-                        <div>
-                            <h4 class="font-semibold text-white">Pune & Maharashtra Corridors</h4>
-                            <p class="text-sm text-slate-400">Deep localized talent mapping across Hinjewadi, Magarpatta, Chakan, and Mumbai business districts.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <div class="w-6 h-6 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center text-xs font-bold mt-1">✓</div>
-                        <div>
-                            <h4 class="font-semibold text-white">Pan-India Execution Capability</h4>
-                            <p class="text-sm text-slate-400">Scalable recruitment pipelines capable of servicing multi-city enterprise hiring requirements seamlessly.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="about" class="p-8 rounded-3xl bg-slate-900 border border-slate-800 relative overflow-hidden">
-                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-brand-blue/10 rounded-full blur-3xl"></div>
-                <h3 class="text-2xl font-bold text-white mb-4">Why Partner With Expedite HRS?</h3>
-                <ul class="space-y-4 text-slate-300 text-sm">
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
-                        Proven 15+ year recruitment track record
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
-                        Rigorous candidate vetting & cultural fit assessment
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
-                        Agile turnaround times for urgent corporate mandates
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
-                        Dedicated partnership tailored to your company growth
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+      <div>
+        <h4 class="font-bold text-slate-900 text-sm mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#specialties" class="hover:text-blue-600">Specialties</a></li>
+          <li><a href="#industries" class="hover:text-blue-600">Industries Covered</a></li>
+          <li><a href="#process" class="hover:text-blue-600">Our 3-Step Process</a></li>
+          <li><a href="https://forjob.in" target="_blank" class="text-blue-600 font-semibold">Candidate Hub (forjob.in)</a></li>
+        </ul>
+      </div>
 
-    <!-- Interactive Inquiry Form Section -->
-    <section id="contact" class="w-full bg-slate-900 py-24 border-t border-slate-800">
-        <div class="w-full max-w-4xl mx-auto px-6">
-            
-            <div class="text-center mb-12">
-                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest">Get In Touch</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Connect With Expedite HRS</h2>
-                <p class="text-slate-400 mt-2 text-sm">Select your inquiry type below to get started instantly.</p>
-            </div>
+      <div>
+        <h4 class="font-bold text-slate-900 text-sm mb-3">Direct Contact</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="https://wa.me/919322057179" target="_blank" class="hover:text-blue-600 flex items-center gap-1.5 font-semibold text-blue-600">💬 WhatsApp: +91 93220 57179</a></li>
+          <li><a href="https://www.linkedin.com/in/hirebetterfaster" target="_blank" class="hover:text-blue-600 flex items-center gap-1.5 font-semibold text-slate-700">💼 LinkedIn Profile</a></li>
+          <li class="text-slate-500">📍 Pune, Maharashtra, India</li>
+        </ul>
+      </div>
 
-            <!-- Form Container -->
-            <div class="p-8 sm:p-12 rounded-3xl bg-slate-950 border border-slate-800 shadow-2xl relative">
-                
-                <form id="inquiryForm" class="space-y-8">
-                    
-                    <!-- Step 1: Intent Selection -->
-                    <div>
-                        <label class="block text-sm font-semibold text-slate-200 mb-4">
-                            How would you like to engage with Expedite HRS? <span class="text-brand-gold">*</span>
-                        </label>
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <label class="relative flex items-center p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-blue cursor-pointer transition">
-                                <input type="radio" name="intent" value="Exploring Expedite HRS services" class="text-brand-blue focus:ring-brand-blue h-4 w-4" required>
-                                <span class="ml-3 text-sm font-medium text-slate-200">1. Exploring Expedite HRS services</span>
-                            </label>
-                            <label class="relative flex items-center p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-blue cursor-pointer transition">
-                                <input type="radio" name="intent" value="Have requirements, want support" class="text-brand-blue focus:ring-brand-blue h-4 w-4" required>
-                                <span class="ml-3 text-sm font-medium text-slate-200">2. Have requirements, want support</span>
-                            </label>
-                        </div>
-                    </div>
+    </div>
 
-                    <!-- Step 2: Contact Details Grid -->
-                    <div class="grid sm:grid-cols-2 gap-6 pt-4 border-t border-slate-800/80">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Full Name <span class="text-brand-gold">*</span></label>
-                            <input type="text" name="name" required placeholder="John Doe" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-blue transition">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Company Name <span class="text-brand-gold">*</span></label>
-                            <input type="text" name="company" required placeholder="Acme Corp" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-blue transition">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Work Email <span class="text-brand-gold">*</span></label>
-                            <input type="email" name="email" required placeholder="john@acmecorp.com" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-blue transition">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Phone Number <span class="text-brand-gold">*</span></label>
-                            <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-blue transition">
-                        </div>
-                    </div>
+    <div class="max-w-7xl mx-auto pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+      <p>&copy; 2026 Expedite HRS (`expeditehrs.in`). All rights reserved.</p>
+      <div class="flex gap-4 mt-4 sm:mt-0">
+        <a href="https://forjob.in" target="_blank" class="hover:text-blue-600">forjob.in Portal</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/hirebetterfaster" target="_blank" class="hover:text-blue-600">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
-                    <!-- Submit Button -->
-                    <div class="pt-4">
-                        <button type="submit" id="submitBtn" class="w-full bg-brand-blue hover:bg-blue-600 text-white font-semibold py-4 rounded-xl transition shadow-lg shadow-brand-blue/30 text-base">
-                            Submit Inquiry
-                        </button>
-                    </div>
-
-                    <!-- Success Message Alert -->
-                    <div id="formSuccess" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center font-medium">
-                        Thank you! Your inquiry has been received. An expert from Expedite HRS will connect with you shortly.
-                    </div>
-
-                </form>
-
-            </div>
-
-        </div>
-    </section>
-
-<!-- Footer -->
-    <footer class="w-full bg-slate-950 py-12 border-t border-slate-800 text-slate-500 text-sm">
-        <div class="w-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            
-            <!-- Copyright & Brand -->
-            <div class="flex items-center gap-2">
-                <span class="font-bold text-white">Expedite HRS</span>
-                <span>&copy; 2026. All rights reserved.</span>
-            </div>
-
-            <!-- Regional Note -->
-            <div class="text-xs text-slate-400">
-                Pune | Maharashtra | Pan-India
-            </div>
-
-            <!-- Real Social Media Icons -->
-            <div class="flex items-center gap-4">
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/company/exphrs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-brand-blue hover:bg-slate-800 transition group">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-                    </svg>
-                </a>
-
-                <!-- Twitter / X -->
-                <a href="https://twitter.com/expeditehrs" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-brand-blue hover:bg-slate-800 transition group">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                </a>
-            </div>
-
-        </div>
-    </footer>
-
-    <!-- Google Apps Script Handler Script -->
-    <script>
-        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'; // Replace with your Apps Script deployment URL when ready
-        const form = document.getElementById('inquiryForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const formSuccess = document.getElementById('formSuccess');
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            
-            if (scriptURL === 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE') {
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Submitting...';
-                
-                setTimeout(() => {
-                    submitBtn.style.display = 'none';
-                    formSuccess.classList.remove('hidden');
-                    form.reset();
-                }, 1000);
-                return;
-            }
-
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Submitting...';
-
-            const formData = new FormData(form);
-            const data = {};
-            formData.forEach((value, key) => (data[key] = value));
-            data.timestamp = new Date().toISOString();
-
-            fetch(scriptURL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
-            })
-            .then(() => {
-                submitBtn.style.display = 'none';
-                formSuccess.classList.remove('hidden');
-                form.reset();
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Submit Inquiry';
-                alert('There was an error submitting your request. Please try again.');
-            });
-        });
-    </script>
 </body>
 </html>
